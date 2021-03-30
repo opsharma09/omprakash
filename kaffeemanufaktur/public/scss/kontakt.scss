@@ -1,0 +1,655 @@
+#contactUpperSection {
+    margin-top: -116px;
+    position: relative;
+
+    .parallax {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #fff;
+        background-image: url(../images/contact-upper.png);
+        background-position: top right;
+        background-repeat: no-repeat repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        transform: scaleX(-1);
+    }
+
+    #contactHeader {
+        height: 30vw;
+        position: relative;
+        z-index: 1;
+        background-image: url(../images/coffee-header.png);
+        background-position: top left;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+    .contactNavigationSection {
+        position: relative;
+        margin: 3vw 0vw 8vw 0vw;
+        transform: scalex(1);
+
+        img {
+            max-width: 125px;
+        }
+
+        p {
+            margin-bottom: 0;
+            margin-top: 15px;
+        }
+    }
+
+    #contactInfos {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        padding-bottom: 5vw;
+
+        #contactInfosEnvelope {
+            max-width: 405px;
+            font-size: 12px;
+            font-family: "times new roman", sans-serif;
+            margin-left: auto;
+            height: calc(1.08 * 30vw);
+            background-image: url(../images/envelope.png);
+            background-position: top right;
+            background-repeat: no-repeat;
+            background-size: contain;
+            padding: 0 10%;
+            text-align: center;
+
+            div#contactInfosEnvelopeUpper {
+                padding-top: 100px;
+
+                h2 {
+                    font-weight: 500;
+                    letter-spacing: 0px;
+                    font-size: 25px;
+                    line-height: 1;
+                    font-family: "minion pro"
+                }
+
+                p {
+                    a {
+                        text-decoration: underline;
+                        color: #000;
+                    }
+                }
+            }
+
+            #contactInfosEnvelopeLower {
+                margin-top: 150px;
+
+                h4 {
+                    font-size: 16px;
+                    font-weight: 600;
+                    margin-bottom: 15px;
+                }
+            }
+        }
+
+        #contactBusinessHour {
+            margin-top: 4.5vw;
+
+            h2 {
+                font-weight: 500;
+                letter-spacing: 0px;
+                font-size: 25px;
+                line-height: 25px;
+                font-family: "minion pro";
+                text-align: center;
+            }
+
+            table {
+                width: 100%;
+                margin-bottom: 15px;
+                border-collapse: collapse;
+                border-spacing: 0;
+                -webkit-border-radius: 5px;
+                border-radius: 5px;
+
+                td {
+                    box-shadow: none;
+                    padding: 0px;
+                    border: none;
+                    vertical-align: top;
+
+                    &.businessHoursLeft {
+                        text-align: right;
+                        padding-right: 10px;
+                    }
+
+                    &.businessHoursRight {
+                        padding-left: 10px;
+                    }
+                }
+            }
+        }
+    }
+
+    #contactFormSection {
+        position: relative;
+
+        #contactFormMailbox {
+            position: absolute;
+            top: auto;
+            bottom: 0px;
+            left: 5vw;
+            right: auto;
+            width: 90vw;
+            height: calc(0.2517 * 90vw);
+            background-image: url(../images/contact-form-back.png);
+            background-position: top left;
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+
+        .contactFormLetter {
+            margin-bottom: 5vw;
+            position: relative;
+            background-color: rgb(250, 246, 242);
+            box-sizing: border-box;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 4px 5px 0px 0px rgba(0, 0, 0, 0.25);
+
+            p#headline {
+                max-width: 60%;
+                font-family: 'Ink Free Regular';
+                font-size: 16px;
+                line-height: 22px;
+            }
+
+            .form-group {
+                margin-bottom: 3px;
+
+                input.form-control {
+                    height: 30px;
+                    line-height: 30px;
+                    padding: 0;
+                    border: none;
+                    color: #fff;
+                    background: #cca35e;
+                    border-radius: 15px;
+                    padding-left: 15px;
+
+                    &::placeholder {
+                        color: #fff !important
+                    }
+                }
+
+                textarea.form-control {
+                    height: auto;
+                    line-height: 30px;
+                    padding: 0;
+                    border: none;
+                    color: #fff;
+                    background: #cca35e;
+                    border-radius: 15px;
+                    padding-left: 15px;
+
+                    &::placeholder {
+                        color: #fff !important
+                    }
+                }
+            }
+
+            .custom-control {
+                display: inline-block;
+                padding-left: 40px;
+                margin-right: 10px;
+
+                .custom-control-input {
+                    width: 30px;
+                    height: 30px;
+
+                    &:focus ~ .custom-control-label::before {
+                        box-shadow: 0 0 0 0.2rem rgba(204, 163, 94, 0.25)
+                    }
+                }
+
+                .custom-control-label {
+                    font-family: 'Ink Free Regular';
+                    font-size: 16px;
+                    line-height: 22px;
+                    color: #333;
+                    font-weight: 600;
+
+                    a:hover {
+                        text-decoration: underline;
+                    }
+
+                    &::before {
+                        width: 30px;
+                        height: 30px;
+                        border-radius: 50%;
+                        top: 0;
+                        left: -40px;
+                        background-color: #cca35e;
+                        border-color: #cca35e;
+                    }
+
+                    &::after {
+                        top: 0;
+                        width: 30px;
+                        height: 30px;
+                        left: -40px;
+                    }
+                }
+            }
+
+            .btn-white {
+                font-family: arial;
+                font-size: 16px
+            }
+        }
+    }
+}
+
+#locationsSection {
+    padding: 0 0 27px;
+    background-image: url(../images/location.png);
+    background-position: top left;
+    background-repeat: no-repeat repeat;
+    background-size: cover;
+    border-top: 2vw solid #999999;
+
+    .locationHeader {
+        padding-top: 5vw;
+
+        h4 {
+            font-family: "minion-pro";
+            font-size: 14px;
+            line-height: 1;
+            font-weight: 400;
+            margin-bottom: 4px;
+            color: #ece4de;
+        }
+
+        h2 {
+            color: #fff;
+            font-family: "minion-pro";
+            font-size: 30px;
+            line-height: 30px;
+            margin-bottom: 4px;
+            font-weight: 500;
+        }
+    }
+
+    .locationImageContent {
+        max-width: 80%;
+        text-align: center;
+        color: #fff;
+        margin: auto;
+
+        h2 {
+            color: #fff;
+            font-family: "minion-pro";
+            font-size: 30px;
+            line-height: 30px;
+            margin-bottom: 4px;
+        }
+
+        h4 {
+            color: #ece4de;
+            font-family: "minion-pro";
+            font-size: 14px;
+            line-height: 14px;
+            margin-bottom: 1.5em;
+            letter-spacing: 1px;
+        }
+
+        p {
+            color: #ece4de;
+        }
+
+        .devider {
+            margin-top: 20px;
+            margin-bottom: 5px;
+        }
+    }
+}
+
+#mapSection {
+    #mapSectionTop {
+        position: relative;
+        padding: 70px 0 27px;
+
+        h4 {
+            color: #000;
+            font-family: "minion-pro";
+            font-size: 16px;
+            line-height: 16px;
+            margin-bottom: 4px;
+            text-align: center;
+            font-weight: 600;
+        }
+
+        h2 {
+            color: #000;
+            font-family: "minion-pro";
+            font-size: 32px;
+            line-height: 1;
+            margin-bottom: 70px;
+            font-weight: 600;
+        }
+
+        #mapBrands {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+        }
+    }
+
+    #mapContainer iframe {
+        width: 100% !important;
+        height: 600px !important;
+    }
+
+    #mapSectionBottom {
+        margin-top: 14px;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+}
+
+#contactFancySection {
+    position: relative;
+
+    #contactFancyTopDeco {
+        position: relative;
+        width: 100%;
+        height: 13.07vw;
+        background-image: url(../images/contactFancyTopDeco.png);
+        background-position: top left;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+    #contactFancyContent {
+        position: relative;
+        box-sizing: border-box;
+        padding-bottom: 70px;
+        background-color: #f5eddf;
+        background-image: url(../images/KontaktElement.png);
+        background-position: center right;
+        background-repeat: no-repeat;
+        background-size: contain;
+        margin-top: -2px;
+
+        .contactFancyContentInner {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+
+            > div {
+                flex: 0 0 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: center;
+
+                h2 {
+                    text-align: center;
+                    font-family: "minion-pro";
+                    font-size: 30px;
+                    line-height: 30px;
+                    font-weight: 500;
+                }
+            }
+        }
+
+        h4 {
+            font-weight: 400;
+            letter-spacing: 1px;
+            font-size: 20px;
+            font-family: minion pro;
+            line-height: 1;
+            margin-bottom: 3px;
+            margin-top: 1.5em;
+            text-align: center;
+        }
+
+        h2 {
+            text-align: center;
+            font-family: "minion-pro";
+            font-size: 30px;
+            line-height: 30px;
+        }
+
+        a {
+            color: #000;
+            text-decoration: underline;
+            font-size: 12px;
+            line-height: 14px;
+        }
+    }
+
+    #contactFancyBottomSection {
+        position: relative;
+
+        #contactFancyBottomBackground {
+            position: relative;
+            width: 100%;
+            height: 43.57vw;
+            background-image: url(../images/contanct-bottom-back.png);
+            background-position: top left;
+            background-repeat: no-repeat;
+            background-size: contain;
+
+            #contactFancyBottomDeco {
+                position: absolute;
+                top: 0px;
+                bottom: auto;
+                height: 43.57vw;
+                left: 0px;
+                right: auto;
+                width: 100%;
+                background-image: url(../images/contact-bottom-back-corner.png);
+                background-position: top left;
+                background-repeat: no-repeat;
+                background-size: contain;
+            }
+        }
+
+        #contactFancyBottomContent {
+            position: absolute;
+            top: 12.2vw;
+            left: 40vw;
+            right: auto;
+            bottom: auto;
+            width: 19vw;
+            height: 24.25vw;
+            overflow: hidden;
+
+            * {
+                color: rgb(200, 179, 154);
+                text-align: center;
+                line-height: 16px;
+            }
+
+            h3 {
+                font-family: "minion-pro";
+                font-size: 22px;
+                line-height: 22px;
+                margin-bottom: 3px;
+            }
+
+            h2 {
+                font-family: "minion-pro";
+                font-size: 32px;
+                line-height: 32px;
+
+                span {
+                    display: none;
+                }
+            }
+
+            p.tiny {
+                font-size: 12px;
+                line-height: 12px;
+                font-family: "minion-pro";
+                margin-bottom: 0.5em;
+            }
+
+            a {
+                color: rgb(200, 179, 154);
+                text-decoration: underline;
+            }
+        }
+
+        #contactFancyBottomPeople {
+            position: absolute;
+            top: 24.5vw;
+            bottom: auto;
+            left: 30vw;
+            right: auto;
+            width: 40vw;
+            height: calc(40vw * 0.4856);
+            background-image: url(../images/people.png);
+            background-position: top left;
+            background-repeat: no-repeat;
+            background-size: contain;
+            pointer-events: none;
+        }
+    }
+
+    #fancyLamp {
+        position: absolute;
+        top: 4vw;
+        bottom: auto;
+        left: 82vw;
+        right: auto;
+        width: 9vw;
+        height: calc(9vw * 3.72);
+        background-image: url(../images/fancy-lamp.png);
+        background-position: top left;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+}
+
+
+@media screen and (max-width: 991px) {
+    #contactUpperSection {
+        .contactNavigationSection .col {
+            flex: 0 0 33.33%;
+            max-width: 33.33%;
+            margin: auto;
+        }
+
+        #contactInfos #contactInfosEnvelope {
+            margin: 3vw 17.5vw;
+            flex-basis: 65vw;
+            max-width: 65vw;
+            min-height: calc(1.08 * 65vw);
+            font-size: 18px;
+            line-height: 24px;
+
+            #contactInfosEnvelopeLower {
+                margin-top: 70px;
+            }
+        }
+    }
+
+    #mapSectionTop {
+        img {
+            height: 9vw;
+        }
+    }
+
+    #contactFancySection {
+        #contactFancyContent {
+
+            .contactFancyContentInner > div {
+                align-items: center;
+            }
+
+            img {
+                margin-top: 40px;
+            }
+        }
+
+        #contactFancyBottomSection #contactFancyBottomContent {
+            position: static;
+            background-color: #f5eddf;
+            width: 100%;
+            height: auto;
+            box-sizing: border-box;
+            padding: 2vw 8vw;
+
+            > * {
+                color: #000;
+            }
+
+            p {
+                a {
+                    color: inherit;
+                }
+            }
+
+            div#contactFancyBottomHeadlines {
+                position: absolute;
+                top: 125px;
+                width: 19%;
+                left: 50%;
+                transform: translateX(-50%);
+                color: #c8b39a;
+
+                h2 {
+                    span {
+                        display: inline-block;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    #contactUpperSection {
+        margin-top: -72px;
+        min-height: 50vh;
+        .contactNavigationSection .col{
+            flex: 0 0 100%;
+            max-width: 100%;
+            margin-bottom: 20px;
+        }
+        #contactInfos #contactInfosEnvelope {
+            flex-basis: 100%;
+            max-width: 100%;
+            height: auto;
+            margin: auto;
+            padding: 0 16%;
+            background-position: center;
+            div#contactInfosEnvelopeUpper{
+                p{
+                    margin-bottom: 5px;
+                }
+            }
+        }
+    }
+
+    #contactFancySection #contactFancyBottomSection #contactFancyBottomContent div#contactFancyBottomHeadlines {
+        top: 100px;
+    }
+}
+
+@media screen and (max-width: 767px){
+    #contactUpperSection #contactInfos #contactInfosEnvelope{
+        background: transparent;
+    }
+    #contactFancySection #contactFancyBottomSection #contactFancyBottomContent div#contactFancyBottomHeadlines{
+        position: static;
+        width: 100%;
+        transform: translate(0);
+    }
+}

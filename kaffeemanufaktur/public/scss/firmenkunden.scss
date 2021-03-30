@@ -1,0 +1,636 @@
+#wholesalePage {
+    margin-top: -116px;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+#wholesaleLoginSection {
+    min-height: 39.9897vw;
+    position: relative;
+    background-image: url(../images/backsteine-mobile.png);
+    background-position: top left;
+    background-repeat: repeat;
+    background-size: auto;
+
+    #wholesaleLoginPlant1,
+    #wholesaleLoginPlant2,
+    #wholesaleLoginBookshelf {
+        position: absolute;
+        background-position: top left;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+    #wholesaleLoginBackgroundElements {
+        position: absolute;
+        top: 0px;
+        bottom: 0px;
+        left: 0px;
+        right: 0px;
+    }
+
+    #wholesaleLoginPlant1 {
+        background-image: url(../images/otherPlant.png);
+        bottom: 0;
+        left: 2vw;
+        width: 4.215vw;
+        height: 7vw;
+    }
+
+    #wholesaleLoginPlant2 {
+        background-image: url(../images/tree.png);
+        bottom: 0px;
+        left: 48vw;
+        width: 11vw;
+        height: 6.471vw;
+    }
+
+    #wholesaleLoginBookshelf {
+        background-image: url(../images/bookshelf.png);
+        bottom: 6.5vw;
+        left: 47vw;
+        width: 11vw;
+        height: 6.843vw;
+    }
+
+    #wholesaleLoginContent {
+        position: relative;
+        padding: 190px 0px 50px;
+        align-items: center;
+        color: #f2f2f2;
+
+        .row {
+            flex: auto;
+        }
+
+        h2 {
+            font-size: 25px;
+            line-height: 25px;
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+
+        form.login-form {
+            max-width: 230px;
+            margin: auto;
+
+            .form-control {
+                background: #da9f56;
+                border-radius: 22px;
+                padding: 7px 15px;
+                border: none;
+                box-shadow: 4px 5px 0px 0px rgba(0, 0, 0, 0.25);
+                height: auto;
+                line-height: 1;
+                text-align: center;
+
+                &::placeholder {
+                    color: #000;
+                }
+            }
+
+            .btn {
+                padding: 3px 21px;
+            }
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            margin-bottom: 15px;
+            margin-left: 30px;
+
+            li {
+                margin-bottom: 10px;
+                background: url(../images/beanBullet-1.png) no-repeat left top;
+                height: 24px;
+                padding-left: 32px;
+                padding-bottom: 3px;
+            }
+        }
+
+        a.btn {
+            padding: 0 32px;
+            line-height: 48px;
+            font-weight: normal;
+            margin-bottom: 15px;
+        }
+    }
+}
+
+.wholesaleRecord {
+    background-color: rgb(130, 148, 166);
+    position: relative;
+    margin-bottom: 15px;
+
+    #wholesaleRecordBackgroundTopOuter {
+        height: 8.125vw;
+        position: relative;
+
+        #wholesaleRecordBackgroundTopInner {
+            padding-top: 8.125%;
+            background-image: url(../images/top-sale.png);
+            background-position: top left;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    }
+
+    #wholesaleRecordContentOuter {
+        position: relative;
+        padding: 100px 0;
+        color: #2c1e21;
+
+        h1 {
+            font-family: "ink free regular", sans-serif;
+            font-weight: 600;
+            font-size: 42px;
+            line-height: 1;
+            padding-right: .25em;
+
+            span {
+                font-family: "times new roman", sans-serif;
+            }
+        }
+
+        h2 {
+            font-size: 26px;
+            font-weight: 600;
+        }
+    }
+
+    #wholesaleRecordBackgroundBottomOuter {
+        height: 13.6618vw;
+        position: relative;
+
+        #wholesaleRecordBackgroundBottomInner {
+            position: absolute;
+            bottom: -10px;
+            left: 0px;
+            right: 0px;
+            height: 13.6618vw;
+            background-image: url(../images/Firmenkunden.png);
+            background-position: top left;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    }
+}
+
+#wholesaleParallaxSection {
+    background-color: rgba(228, 207, 171, 0.4);
+    background-image: url(../images/wholesale-parra.png);
+    box-shadow: inset 0px 0px 20px 4px rgba(0, 0, 0, 0.25);
+    background-position: top left;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 120vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 50px 0;
+
+    h3 {
+        font-size: 28px;
+        line-height: 28px;
+        font-weight: 600;
+    }
+
+    h2 {
+        font-size: 36px;
+        line-height: 1;
+        font-weight: 600;
+    }
+
+    .highlight-box {
+        height: 100%;
+
+        h3 {
+            font-size: 28px;
+            line-height: 28px;
+            letter-spacing: 2px;
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+    }
+}
+
+#wholesaleConsulting {
+    position: relative;
+    padding-top: 50px;
+    margin-bottom: 50px;
+
+    a.uspSectionInner {
+        display: block;
+        transition: .3s all ease-in-out;
+        min-height: 450px;
+
+        img {
+            border-radius: 20px;
+            margin-bottom: 10px;
+            width: 100%;
+        }
+
+        h4.title {
+            font-size: 25px;
+            line-height: 1;
+            font-weight: 600;
+            color: #2c1e21;
+            margin-bottom: 15px;
+        }
+
+        p {
+            color: #000;
+            margin-bottom: 15px;
+            line-height: 1.5;
+        }
+    }
+
+    a.btn-white {
+        margin-bottom: 15px;
+    }
+
+    .col-md-4:hover {
+        a.uspSectionInner {
+            transform: scale(1.05);
+
+            h4.title {
+                text-decoration: underline;
+                text-decoration-color: #a98a45;
+            }
+        }
+    }
+
+    #wholesaleConsultingFloatingOuter {
+        position: absolute;
+        top: 50%;
+        bottom: auto;
+        left: auto;
+        right: 0px;
+        transform: translateY(-50%);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        #wholesaleConsultingFloatingMiddle {
+            position: relative;
+            width: 14vw;
+            padding-top: 92.3077%;
+            background-image: url(../images/side-curve.png);
+            background-position: top left;
+            background-repeat: no-repeat;
+            background-size: cover;
+
+            #wholesaleConsultingFloatingInner {
+                position: absolute;
+                top: 0px;
+                bottom: 0px;
+                left: 0px;
+                right: 0px;
+                box-sizing: border-box;
+                padding-left: 17%;
+                text-align: center;
+                display: flex;
+                flex-direction: column;
+                color: #000;
+                justify-content: center;
+
+                h3 {
+                    font-size: 2vw;
+                    margin: 0;
+                }
+            }
+        }
+    }
+}
+
+#wholesaleServices {
+    position: relative;
+    padding: 120px 0px;
+    min-height: 120vh;
+    text-align: center;
+    background-color: rgba(228, 207, 171, 0.4);
+    background-image: url(../images/wholesale-parra.png);
+    background-position: top left;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+    &.parallax {
+        box-shadow: inset 0px 0px 20px 4px rgba(0, 0, 0, 0.25);
+    }
+
+    h2 {
+        font-size: 45px;
+        line-height: 45px;
+        margin-top: 100px;
+        margin-bottom: 80px;
+        font-weight: 600;
+    }
+
+    .row {
+        justify-content: space-between;
+
+        .col {
+            flex: 0 0 23%;
+            max-width: 23%;
+        }
+    }
+
+    .highlight-box {
+        margin-bottom: 80px;
+
+        .imageWrapper {
+            position: relative;
+            width: 80%;
+            margin: 0px 10%;
+            padding-top: 80%;
+
+            & > div {
+                position: absolute;
+                top: 0px;
+                left: 0px;
+                right: 0px;
+                bottom: 0px;
+                width: auto;
+                height: auto;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+
+                img {
+                    width: auto;
+                    height: auto;
+                    max-width: 100%;
+                    max-height: 100%;
+                }
+            }
+        }
+
+        h4 {
+            letter-spacing: 1px;
+            font-size: 20px;
+            font-weight: 600;
+        }
+    }
+}
+
+#newProductGenericSection {
+    position: relative;
+    min-height: 35.4469vw;
+    background-position: top left;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(../images/newProduct.png);
+
+    .container {
+        min-height: inherit;
+
+        div {
+            min-height: inherit;
+        }
+
+        .row {
+            justify-content: center;
+            align-items: center;
+
+            .text-center {
+                min-height: auto;
+
+                h3 {
+                    font-size: 24px;
+                    line-height: 1;
+                    font-weight: 600;
+                    margin: auto;
+                }
+
+                h2 {
+                    font-size: 56px;
+                    line-height: 1;
+                    color: #000;
+                    font-weight: 600;
+                }
+
+                a.btn-white {
+                    padding: 0 40px;
+                    line-height: 44px;
+                    margin-bottom: 15px;
+                }
+            }
+        }
+    }
+
+    #newProductGenericSectionFloaterOuter {
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        width: 15vw;
+        height: 8.9831vw;
+        background-image: url(../images/corner.png);
+        background-position: top left;
+        background-repeat: no-repeat;
+        background-size: cover;
+        overflow: hidden;
+
+        .inner {
+            transform: rotate(31deg);
+            text-align: right;
+            padding-top: 35px;
+            position: relative;
+            font-size: 18px;
+            margin-right: -.5vw;
+            font-weight: 600;
+            color: #fff;
+        }
+    }
+}
+
+#wholesaleCoffeeBar {
+    position: relative;
+    height: 1px;
+    min-height: 120vh;
+    padding: 120px 0;
+    box-shadow: inset 0px 0px 20px 4px rgba(0, 0, 0, 0.25);
+    background-color: rgba(228, 207, 171, 0.4);
+    background-image: url(../images/wholesale-parra.png);
+    background-position: top left;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .container {
+        flex: auto;
+
+        h2 {
+            font-size: 25px;
+            line-height: 25px;
+            font-weight: 600;
+        }
+    }
+}
+
+.highlight-box {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 25px;
+    box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.25);
+    transition: 250ms;
+
+    &:hover {
+        box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.35);
+        transform: scale(1.05)
+    }
+}
+
+#wholesaleReferences {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 40px 2.5%;
+
+    h2 {
+        font-size: 30px;
+        line-height: 1;
+        font-weight: 600;
+        color: #000;
+        flex: 0 0 100%;
+        margin: 20px 0;
+    }
+
+    div {
+        height: 10vh;
+        flex: 1 1 auto;
+        margin: 25px 2.5%;
+
+        img {
+            max-height: 100%;
+        }
+    }
+}
+
+#wholesaleHanoverSection {
+    background-image: url(../images/Kaffee.png);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 70vh;
+    filter: sepia(1) saturate(0.5);
+    box-shadow: inset 0px 0px 20px 4px rgba(0, 0, 0, 0.25);
+}
+
+#contactUsGeneric {
+    position: relative;
+    border-bottom: 7px solid rgb(228, 207, 171);
+    margin-bottom: 40px;
+    padding-bottom: 30px;
+    background: linear-gradient(rgb(165, 165, 165), white);
+    padding-top: 70px;
+
+    h3 {
+        font-size: 25px;
+        line-height: 1;
+        font-weight: 600;
+        margin-bottom: 10px;
+    }
+
+    h2 {
+        margin-bottom: 40px;
+        font-size: 30px;
+        line-height: 1;
+        font-weight: 600;
+    }
+
+    a.btn-white {
+        padding: 0 42px;
+        line-height: 44px;
+    }
+
+    span {
+        font-weight: 600;
+        font-size: 12px;
+    }
+}
+
+
+@media screen and (max-width: 991px) {
+
+    #wholesaleParallaxSection,
+    #wholesaleCoffeeBar {
+        min-height: 1px;
+        height: auto;
+    }
+
+    #wholesaleServices {
+        padding: 30px 0;
+        height: auto;
+
+        h2 {
+            margin: 20px 0;
+        }
+
+        .row .col {
+            max-width: 33.33%;
+            flex: 0 0 33.33%;
+        }
+
+        .highlight-box {
+            margin-bottom: 30px;
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    #wholesaleParallaxSection .col-md-4 {
+        margin-bottom: 15px;
+    }
+
+    #wholesaleConsulting #wholesaleConsultingFloatingOuter {
+        display: none;
+    }
+
+    #wholesaleServices .row .col {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    #newProductGenericSection .container .row .text-center h3 {
+        display: none;
+    }
+
+    #newProductGenericSection {
+        background-size: contain;
+
+        .container .row .text-center h2 {
+            line-height: 35vw;
+        }
+        #newProductGenericSectionFloaterOuter{
+            width: 25vw;
+            height: 15vw;
+            .inner{
+                padding-top: 20px;
+                padding-left: 35px;
+                font-size: 15px;
+            }
+        }
+    }
+    #contactUsGeneric{
+        img{
+            display: none;
+        }
+    }
+}
+
+
+@media screen and (max-width:480px){
+    #newProductGenericSection #newProductGenericSectionFloaterOuter .inner{
+        padding: 6px 19px 0;
+    }
+}

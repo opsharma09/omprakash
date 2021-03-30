@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1634.928" height="954.521" viewBox="0 0 1634.928 954.521">
+  <g id="Group_40" data-name="Group 40" transform="translate(-342 -4804.705)">
+    <g id="Full_Color" data-name="Full Color" transform="translate(343 4952.214)" opacity="0.47">
+      <path id="Path_1188" data-name="Path 1188" d="M67.61,3223.414c33.651-46.377,64.192-161.754,132.062-170.8s505.8,223.577,643.616,296.87c143.652,76.406,267.794,131,378.932,144.272s253.936,97.561,253.936,97.561H67.61Z" transform="translate(-67.61 -3001.745)" fill="#ffe959" stroke="#040405" stroke-miterlimit="10" stroke-width="1" opacity="0.3"/>
+      <path id="Path_1189" data-name="Path 1189" d="M1406.594,3591.171c-18.1-30.259-81.443-96.429-105.2-111.133s-85.963-62.214-144.785-173.066-108.34-304.988-236.4-242.426c-147.049,71.838-415.129,257.146-852.6,329.432v197.193Z" transform="translate(-67.61 -3001.602)" fill="#d3686c" stroke="#040405" stroke-miterlimit="10" stroke-width="1" opacity="0.3"/>
+      <path id="Path_1190" data-name="Path 1190" d="M1358.8,3572.762c-251.958-99.82-363.374-506.2-612.789-513.834s-328.876,456.149-678.4,513.834Z" transform="translate(-67.61 -2983.193)" fill="#90c28e" stroke="#040405" stroke-miterlimit="10" stroke-width="1" opacity="0.3"/>
+      <path id="Path_1191" data-name="Path 1191" d="M67.61,3622.891s535.311,1.128,629.194-11.316,374.408-419.649,467.159-461.5,312.194-110.816,312.194-110.816v589.569H67.61Z" transform="translate(-67.61 -3039.257)" fill="#999" stroke="#040405" stroke-miterlimit="10" stroke-width="1" opacity="0.3"/>
+    </g>
+    <g id="Contour" transform="translate(343 4952.214)">
+      <path id="Path_1192" data-name="Path 1192" d="M67.61,3622.891s535.311,1.128,629.194-11.316,374.408-419.649,467.159-461.5,312.194-110.816,312.194-110.816v589.569H67.61Z" transform="translate(-67.61 -3039.257)" fill="none" stroke="#2b3848" stroke-miterlimit="10" stroke-width="1"/>
+      <path id="Path_1193" data-name="Path 1193" d="M1358.8,3572.762c-251.958-99.82-363.374-506.2-612.789-513.834s-328.876,456.149-678.4,513.834Z" transform="translate(-67.61 -2983.193)" fill="none" stroke="#2b3848" stroke-miterlimit="10" stroke-width="1"/>
+      <path id="Path_1194" data-name="Path 1194" d="M1406.594,3591.171c-18.1-30.259-81.443-96.429-105.2-111.133s-85.963-62.214-144.785-173.066-108.34-304.988-236.4-242.426c-147.049,71.838-415.129,257.146-852.6,329.432v197.193Z" transform="translate(-67.61 -3001.602)" fill="none" stroke="#2b3848" stroke-miterlimit="10" stroke-width="1"/>
+      <path id="Path_1195" data-name="Path 1195" d="M67.61,3223.414c33.651-46.377,64.192-161.754,132.062-170.8s505.8,223.577,643.616,296.87c143.652,76.406,267.794,131,378.932,144.272s253.936,97.561,253.936,97.561H67.61Z" transform="translate(-67.61 -3001.745)" fill="none" stroke="#2b3848" stroke-miterlimit="10" stroke-width="1"/>
+    </g>
+    <text id="Aroma" transform="translate(937.199 5061.97)" fill="#161615" font-size="32" font-family="Eagle-Light, Eagle" font-weight="300"><tspan x="0" y="0">Aroma</tspan></text>
+    <text id="Body" transform="translate(1209.897 5060.776)" fill="#161615" font-size="32" font-family="Eagle-Light, Eagle" font-weight="300"><tspan x="0" y="0">Body</tspan></text>
+    <text id="Bitterness" transform="translate(1546.833 5062.453)" fill="#161615" font-size="33" font-family="Eagle-Light, Eagle" font-weight="300"><tspan x="0" y="0">Bitterness</tspan></text>
+    <path id="Path_1196" data-name="Path 1196" d="M67.61,3001.076v738.068H1701.538" transform="translate(275.39 1803.63)" fill="none" stroke="#000" stroke-miterlimit="10" stroke-width="2"/>
+    <line id="Line_425" data-name="Line 425" y2="66.163" transform="translate(1075.793 5543.313)" fill="none" stroke="#1456a2" stroke-miterlimit="10" stroke-width="2"/>
+    <line id="Line_427" data-name="Line 427" y2="80.271" transform="translate(1210.033 5543.313)" fill="none" stroke="#1456a2" stroke-miterlimit="10" stroke-width="2"/>
+    <line id="Line_428" data-name="Line 428" y2="144.6" transform="translate(1321.151 5543.313)" fill="none" stroke="#1456a2" stroke-miterlimit="10" stroke-width="2"/>
+    <line id="Line_429" data-name="Line 429" y2="83.938" transform="translate(1394.109 5543.313)" fill="none" stroke="#1456a2" stroke-miterlimit="10" stroke-width="2"/>
+    <line id="Line_430" data-name="Line 430" y2="55.794" transform="translate(973.114 5543.313)" fill="none" stroke="#1456a2" stroke-miterlimit="10" stroke-width="2"/>
+    <path id="Path_1197" data-name="Path 1197" d="M208.947,3226.5" transform="translate(680.108 2449.138)" fill="none" stroke="#1456a2" stroke-miterlimit="10" stroke-width="2"/>
+    <path id="Path_1198" data-name="Path 1198" d="M208.947,3192.252" transform="translate(680.108 2351.061)" fill="none" stroke="#1456a2" stroke-miterlimit="10" stroke-width="2"/>
+    <line id="Line_431" data-name="Line 431" x2="2.42" y2="773.085" transform="translate(886.821 4885.516)" fill="none" stroke="#a80012" stroke-miterlimit="10" stroke-width="8"/>
+    <text id="City" transform="translate(1036.527 5698.818)" fill="#161615" font-size="50" font-family="Rosarian"><tspan x="0" y="0">City</tspan></text>
+    <text id="Medium_Light" data-name="Medium
+Light" transform="translate(971.295 5649.341)" fill="#161615" font-size="42" font-family="Rosarian"><tspan x="-60.144" y="0">Medium</tspan><tspan x="-36.834" y="31">Light</tspan></text>
+    <text id="Light" transform="translate(845.037 5721.019)" fill="#161615" font-size="50" font-family="Rosarian"><tspan x="0" y="0">Light</tspan></text>
+    <text id="Vienna_Roast" data-name="Vienna
+Roast" transform="translate(1196.925 5653.149)" fill="#161615" font-size="41" font-family="Rosarian"><tspan x="-46.453" y="0">Vienna</tspan><tspan x="-38.745" y="31">Roast</tspan></text>
+    <text id="French" transform="translate(1318.921 5730.227)" fill="#161615" font-size="43" font-family="Rosarian"><tspan x="-48.483" y="0">French</tspan></text>
+    <text id="Dark" transform="translate(1392.471 5657.107)" fill="#161615" font-size="41" font-family="Rosarian"><tspan x="-37.085" y="0">Dark</tspan></text>
+  </g>
+</svg>

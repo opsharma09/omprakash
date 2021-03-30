@@ -1,0 +1,52 @@
+#agbanner {
+    position: relative;
+    background-position: center left;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 3vw;
+    margin-top: -116px;
+    height: 30vw;
+    background-image: url(../images/shipping.jpg);
+
+    #agbBannerBottomDeco {
+        position: absolute;
+        top: auto;
+        bottom: -1px;
+        height: 12vw;
+        left: 0px;
+        right: auto;
+        width: 100%;
+        background: url(../images/agbannerbottom.svg) no-repeat;
+        background-size: 100% 100%;
+    }
+}
+
+.has_content {
+    padding: 50px 0 70px;
+
+    .blocked_content {
+        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.61), 0 0 40px rgba(0, 0, 0, 0) inset;
+        padding: 20px;
+
+        h5 {
+            font: 400 18px/1.8 'minion pro';
+            color: #c6a866;
+            margin-bottom: 5px;
+            margin-top: 15px;
+        }
+        p{color: #000;
+            a{
+                color: inherit;
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 767px){
+    #agbanner {
+        margin-top: -72px;
+        height: 50vh;
+    }
+}

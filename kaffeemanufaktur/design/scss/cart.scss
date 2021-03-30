@@ -1,0 +1,244 @@
+#agbanner {
+    position: relative;
+    background-position: center left;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 3vw;
+    margin-top: -116px;
+    height: 30vw;
+    background-image: url(../images/datenschutz.jpg);
+
+    #agbBannerBottomDeco {
+        position: absolute;
+        top: auto;
+        bottom: -1px;
+        height: 12vw;
+        left: 0px;
+        right: auto;
+        width: 100%;
+        background: url(../images/agbannerbottom.svg) no-repeat;
+        background-size: 100% 100%;
+    }
+}
+
+.cart-form {
+    .coupon_message_wrap {
+        padding: 10px 0;
+    }
+
+    .shop_table {
+        margin-bottom: 24px;
+        border-radius: 5px;
+        padding: 0 15px;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+
+        .row {
+            border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+            border-top: 1px solid rgba(0, 0, 0, 0.1);
+
+            &.head {
+                border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+
+                .col {
+                    font-weight: bold;
+                    text-align: center;
+
+                    &:nth-child(2) {
+                        span {
+                            display: block;
+                            width: 100%;
+                            text-align: left;
+                        }
+                    }
+                }
+            }
+
+            .col {
+                &.actions {
+                    padding: 15px 30px;
+
+                    .row {
+                        border: none;
+
+                        input {
+                            margin-right: 10px;
+                            padding: 10px;
+                            width: 130px;
+                            line-height: 22px;
+                            border: 1px solid #d3ced2;
+                            border-radius: 5px;
+                            font-family: arial;
+                        }
+
+                        .btn-white {
+                            line-height: 44px;
+                            border-radius: 5px;
+                            padding: 0 30px;
+                            font-size: 16px;
+                            font-family: arial;
+                        }
+
+                    }
+                }
+
+                &:not(.actions) {
+                    padding: 10px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+
+                    > * {
+                        flex: 0 0 100%;
+                    }
+
+                    img {
+                        width: 32px;
+                        height: 32px;
+                        object-fit: cover;
+                        flex: 0 0 auto;
+                    }
+
+                    a.btn-white {
+                        width: 45px;
+                        height: 40px;
+                        border-radius: 4px;
+                        color: #fff !important;
+                        flex: 0 0 auto;
+                        padding: 0;
+                        text-align: center;
+                        line-height: 42px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.cart_totals {
+    h2 {
+        font-weight: 500;
+        letter-spacing: 0px;
+        font-family: "minion pro";
+        font-size: 21px;
+        line-height: 1.2;
+    }
+
+    table {
+        border: 1px solid rgba(0, 0, 0, .1);
+        text-align: left;
+        width: 100%;
+        border-collapse: separate;
+        border-radius: 5px;
+        border-collapse: separate;
+        margin: 0 0 6px;
+        text-align: center;
+        padding: 0;
+
+        tr {
+
+            th,
+            td {
+                padding: 10px;
+            }
+
+            &:not(:first-child) {
+
+                th,
+                td {
+                    border-top: 1px solid rgba(0, 0, 0, 0.12)
+                }
+            }
+        }
+    }
+
+    .proceed {
+        padding: 1em 0;
+
+        a.btn-white {
+            margin-bottom: 15px;
+            border-radius: 4px;
+            font-weight: 700;
+            width: 100%;
+            color: #fff !Important;
+            text-align: center;
+            line-height: 39px;
+            font: 17.5px;
+            background: #c6a866;
+        }
+    }
+}
+
+
+@media screen and (max-width: 767px) {
+    #agbanner {
+        height: 50vh;
+        margin-top: -72px;
+    }
+
+    .cart-form .shop_table {
+        .row.head {
+            display: none;
+        }
+
+        .row {
+            &:not(.actions) {
+                .col {
+                    flex: 0 0 100%;
+                    text-align: right;
+                    align-items: flex-end;
+                    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+
+                    &:not(.actions) {
+
+                        &:first-child {
+                            display: none;
+                        }
+                    }
+
+                    &:before {
+                        display: block;
+                        position: absolute;
+                        left: 10px;
+                        top: 10px;
+                        font-weight: bold;
+                    }
+
+                    &:nth-child(2):before {
+                        content: "Produkt:";
+                    }
+
+                    &:nth-child(3):before {
+                        content: "Pries:";
+                    }
+
+                    &:nth-child(4):before {
+                        content: "Anzahl:";
+                    }
+
+                    &:nth-child(5):before {
+                        content: "Gesamtsumme:";
+                    }
+
+                    &.actions {
+                        border: none;
+
+                        .coupon {
+                            display: flex;
+                            justify-content: space-between;
+                            margin-bottom: 20px;
+
+                            .btn-white {
+                                width: auto;
+                            }
+                        }
+
+                        .btn-white {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

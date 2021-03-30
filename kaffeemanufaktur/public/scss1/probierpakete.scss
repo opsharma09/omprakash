@@ -1,0 +1,118 @@
+#testSetsBanner {
+    position: relative;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    width: 100%;
+    margin-top: -116px;
+    height: 100vh;
+    background-image: url(../images/testbanner.jpg);
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    #testSetsBannerContent {
+        position: absolute;
+        text-align: center;
+        right: 0;
+        bottom: 24px;
+
+        a {
+            padding: 0 50px;
+        }
+
+        h1 {
+            color: white;
+            font-weight: 600;
+            text-shadow: 3px 3px 2px black;
+            font-size: 2vw;
+            margin-bottom: 4px;
+            line-height: 2vw;
+            text-align: center;
+        }
+    }
+}
+
+#testSetsSection {
+    position: relative;
+    //min-height: calc(69.9740vw + 15vw + 20vw);
+
+    #testSetsContentOuter {
+        position: relative;
+        padding: 7vw 0;
+        background-color: rgb(242, 232, 215);
+
+        #testSetsBackgroundMap {
+            position: absolute;
+            top: 25vw;
+            left: 0px;
+            width: 100%;
+            height: calc(100% - 25vw);
+            background-image: url(../images/test-map.png);
+            background-position: top left;
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+
+        h2 {
+            color: black;
+            font-weight: 600;
+            font-size: 30px;
+            line-height: 30px;
+            margin-bottom: 3vw;
+            font-family: "times new roman", sans-serif;
+        }
+
+        p {
+            line-height: 1.5;
+            font-family: "minion-pro";
+        }
+
+        h3 {
+            font-family: "minion-pro";
+            color: black;
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 20px;
+            margin-top: 5vw;
+            margin-bottom: 3vw;
+            &.noBottomMargin{
+                margin-bottom: .5vw;
+            }
+        }
+
+        a {
+            text-align: center;
+            transition: .3s all ease-in-out;
+
+            img {
+                margin-bottom: -3vw;
+            }
+
+            h4 {
+                padding: 0px 15%;
+                font-family: "minion-pro";
+                color: black;
+                font-size: 18px;
+                letter-spacing: 2px;
+                line-height: 18px;
+                margin-bottom: 0.5vw;
+            }
+
+            p {
+                color: black;
+                padding: 0 12%;
+                font-size: 12px;
+                line-height: 16px;
+            }
+        }
+        .col-md-6:hover a{
+            transform: scale(1.05);
+            h4{
+                text-decoration: underline;
+                text-decoration-color: #a98a45;
+            }
+        }
+    }
+}

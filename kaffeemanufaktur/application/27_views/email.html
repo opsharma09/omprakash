@@ -1,0 +1,40 @@
+        $body =  '<!DOCTYPE html>
+                    <html lang="en">
+
+                    <head>
+                        <meta charset="UTF-8">
+                        <title>Email Template</title>
+                        <link rel="preconnect" href="https://fonts.gstatic.com">
+                        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+                    </head>
+
+                    <body style="font-size: 13px; max-width: 600px; margin: auto; color: #000; font-family: \'poppins\',sans-serif">
+                        <table style="width: 100%;padding: 40px;">
+                            <thead>
+                                <tr>
+                                    <td colspan="2">
+                                        <div style="display: inline-table; width: 33%; vertical-align:middle; text-align: center;">
+                                            <img src="images/email-logo.jpg" style="margin: 0 0 80px" alt="">
+                                        </div>
+                                        <div style="display: inline-table; width: 66%; vertical-align:middle;">
+                                            <h4 style="font-size: 23px;line-height: 32px; font-family: \'Times new roman\', sans-serif;margin:0">Order Confirmation</h4>
+                                            <h5 style="margin: auto 0 80px; font-size: 21px; font-weight: 500;line-height: 32px;">Order # <span style="color: #0572c6">'.$new_order->txn_no.'</span></h5>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td colspan="2">
+                                        <h2 style="font-size: 20px;line-height: 33px;font-family: \'poppins\', sans-serif; margin: 0; color: #e80000; font-weight: 400;">Hello '.$session_data->first_name.',</h2>
+                                         <h1 style="font-size: 20px; line-height: 1.6;font-weight: 600; margin: 0 0 20px;">How would you describe your taste in coffee?</h1>
+                                        <p style="font-size: 13px; line-height: 20px; color: #1b1b1b; margin-bottom: 40px;">Thank you for order. Duo Reges: constructio interrete. Itaque hoc frequenter dici solet a vobis, non intellegere nos, quam dicat Epicurus voluptatem. Nullus est igitur cuiusquam dies natalis. Aliter homines, aliter philosophos loqui putas oportere? Quae cum praeponunt, ut sit aliqua rerum selectio, naturam videntur sequ</p>
+                                        <p style="font-size: 17px; color: #615f5f; line-height: 26px; font-family: times new roman; margin: 0 0 8px; font-weight: bold">Your order will sent to:</p>
+                                        <h3 style="font-size: 15px; font-weight: 600; color: #1b1b1b; line-height: 26px; margin: 0;">'.$user_del_address->first_name.'</h3>
+                                        <h3 style="font-size: 15px; font-weight: 600; color: #1b1b1b; line-height: 26px; margin: 0;">'.$user_del_address->street.','.$user_del_address->additional_address.', '.$user_del_address->pincode.', '.$user_del_address->place.'</h3>
+                                        <h3 style="font-size: 15px; font-weight: 600; color: #1b1b1b; line-height: 26px; margin: 0 0 16px;">India</h3><a href="#" style=" display: inline-block;padding: 18px 29px;color: #fff;background: #940000;text-decoration: none;text-transform: uppercase;font-size: 18px;margin-bottom: 38px;">View or manage order</a>
+                                        <h5 style="font-size: 25px; line-height: 1;font-family: \'times new roman\',sans-serif; margin: 0 0 1rem; color: #940000;">Order Summary</h5>
+                                        <p style="font-weight: 600; font-size: 15px; line-height: 1.7; color: #1b1b1b; margin: 0 0 10px;">Order # <span style="color: #0572c6;">'.$new_order->txn_no.'</span></p>
+                                        <p style="font-size: 15px; line-height: 1.7; color: #615f5f; margin: 0 0 1.5rem">Place on '.date('l', strtotime('+4 day', $added_on)).';, '.date('F', strtotime('+4 day', $added_on)).' '.date('d', strtotime('+4 day', $added_on)).', '.date('Y', strtotime('+4 day', $added_on)).'</p>
+                                    </td>
+                                </tr>';

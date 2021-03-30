@@ -1,0 +1,496 @@
+//@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;500;700&display=swap');
+
+.inner_content_banner {
+    margin-top: -116px;
+    position: relative;
+
+    .inner_content_banner_content {
+        position: absolute;
+        width: 100%;
+        bottom: 100px;
+        left: 0;
+
+        h1 {
+            font-size: 42px;
+            line-height: 1;
+            color: #fff;
+            letter-spacing: 2px;
+        }
+    }
+}
+
+.breadcums {
+    padding: 12px 0;
+    background: #faf7f2;
+
+    ul.breadcum {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+
+        li {
+            color: #777474;
+
+            &:not(:last-child):after {
+                content: "/";
+                display: inline-block;
+                padding: 0 8px;
+            }
+
+            a {
+                color: inherit;
+                font-family: "poppins", sans-serif;
+                display: inline-block;
+
+                span {
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+}
+
+.choose_coffee {
+    padding: 80px 0 110px;
+    background: #f2f3f2;
+
+    .coffee-list {
+        h2.title {
+            font-size: 1.375rem;
+            font-weight: 600;
+            color: #000;
+            line-height: 1.35;
+            line-height: -.88px;
+            margin-bottom: .5rem;
+            font-family: Noe Display, Arial, Georgia, serif;
+        }
+
+        p.description {
+            color: #000;
+            font-size: 1.1rem;
+            letter-spacing: 1px;
+            font-family: Noe Display, Arial, Georgia, serif;
+        }
+
+        .title-box {
+            background: #fff;
+            padding: 6px 20px;
+            font-size: 30px;
+            line-height: 33px;
+            margin-bottom: 2rem;
+            font-family: FF Mark, Arial, Helvetica, Verdana, sans-serif;
+            font-weight: 600;
+            color: #323030;
+
+            img {
+                margin-right: 10px;
+                height: 20px;
+            }
+        }
+
+        .coffee_selection {
+            background: #fff;
+
+            .coffee_selection_header {
+                h3 {
+                    font-size: 15px;
+                    color: #050505;
+                    line-height: 1.5;
+                    font-weight: 400;
+                    border-bottom: 1px solid #cfba97;
+                    margin-bottom: 15px;
+                    margin-top: 30px;
+                }
+            }
+
+            .wizard {
+                margin: 0;
+
+                .nav-tabs {
+                    position: relative;
+                    margin-bottom: 0;
+
+                    li {
+                        a {
+                            color: #000000;
+                            font-weight: bold;
+                            font-size: 15px;
+                            display: flex;
+                            border: none;
+                            border-radius: 0;
+                            border-top: 3px solid #aaa;
+                            padding: .5rem .5rem .5rem 2rem;
+                            letter-spacing: 1px;
+                            font: .875em/32px arial, sans-serif;
+                            background: #e8eaed;
+
+                            &.active {
+                                border-color: #cfba97;
+                                background: #fff;
+                                font-weight: 700;
+                            }
+                        }
+
+                        span.round-tab {
+                            width: 70px;
+                            height: 70px;
+                            line-height: 70px;
+                            display: inline-block;
+                            border-radius: 100px;
+                            background: #fff;
+                            border: 2px solid #e0e0e0;
+                            z-index: 2;
+                            position: absolute;
+                            left: 0;
+                            text-align: center;
+                            font-size: 25px;
+
+                            &:hover {
+                                color: #333;
+                                border: 2px solid #333;
+                            }
+
+                            i {
+                                color: #5bc0de;
+                            }
+                        }
+                    }
+                }
+
+                > div.wizard-inner {
+                    position: relative;
+                }
+
+                h3 {
+                    margin-top: 0;
+                }
+
+                &.different_design {
+                    .nav-tabs1 {
+                        border-bottom: 1px solid #e1e2e5;
+                        .div_tab,
+                        .div_tab1 {
+                            li {
+                                a {
+                                    display: block;
+                                    border-top: 0;
+                                    border-bottom: 3px solid transparent;
+                                    text-align: center;
+                                    padding: 1rem 1rem .5rem;
+                                    font-size: 14px;
+                                    line-height: 26px;
+                                    justify-content: center;
+                                    background: #fff;
+                                    color: #000;
+
+                                    &.active {
+                                        border-bottom-color: #000;
+                                        font-weight: 700;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    & + .tab-content {
+                        background: #fff;
+                        padding: 0 15px 15px;
+                    }
+                }
+            }
+
+            .tab-pane {
+                position: relative;
+            }
+
+            .coffee_selection_box {
+                margin-top: 40px;
+                text-align: center;
+                border: 1px solid #f6f1f1;
+                border-radius: 15px;
+                padding: 25px 0;
+                background: #fdfbfb;
+                height: calc(100% - 40px);
+
+                img {
+                    margin-bottom: 40px;
+                    transition: .3s all ease-in-out;
+                }
+
+                h5 {
+                    font: 14px/1.5 "poppins", sans-serif;
+                    color: #2b3031;
+                    max-width: 70%;
+                    margin: auto;
+                    transition: .3s all ease-in-out;
+                }
+
+                &:hover {
+                    background: transparent;
+                    border-color: #cfba97;
+                    box-shadow: 0 0 10px #cfba97;
+
+                    img {
+                        margin-top: -15px;
+                        margin-bottom: 55px;
+                    }
+
+                    h5 {
+                        color: #ba8e45;
+                    }
+                }
+            }
+        }
+    }
+
+    .right_sidebar {
+        border: 1px solid #eaecef;
+        background: #fff;
+        top: 110px;
+        position: sticky;
+        position: -webkit-sticky;
+
+        .heading {
+            h2 {
+                font-size: 1rem;
+                line-height: 50px;
+                margin: 0;
+                text-indent: 1rem;
+                letter-spacing: -.72px;
+                font-family: arial;
+                text-transform: none;
+                font-weight: 700;
+                background: #e8eaed;
+                border-top: 3px solid #cfba97;
+                color: #000;
+            }
+        }
+
+        p {
+            font-size: 1.0625rem;
+            line-height: 28px;
+            font-family: FF Mark, Arial, Helvetica, Verdana, sans-serif;
+            margin: 0;
+        }
+
+        .sidebar_inner {
+            padding: 5px 10px 40px;
+
+            .feat_box {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: start;
+                align-items: center;
+                margin-top: 30px;
+
+                img {
+                    margin-right: 20px;
+                }
+
+                .feat_inner_text {
+                    flex: 1 1 auto;
+                    width: 1%;
+                    color: #a8864e;
+                    font-family: "poppins", sans-serif;
+                    background-image: linear-gradient(to right, #a8864e 33%, rgba(255, 255, 255, 0) 0%);
+                    background-position: bottom;
+                    background-size: 4px 1px;
+                    background-repeat: repeat-x;
+                    line-height: 1.5;
+                    padding-bottom: 4px;
+                }
+            }
+        }
+
+        .right_product_detials {
+            border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+
+            [class*="col-"] {
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+            }
+
+            small {
+                font-size: 85%;
+                font-family: arial;
+            }
+        }
+
+        ul {
+            padding-inline-start: 15px;
+            margin-bottom: 0;
+
+            li {
+                font-family: arial;
+                font-weight: 600;
+                line-height: 1.5;
+            }
+        }
+    }
+}
+
+#product_section {
+    border-radius: 0 0 5px 5px;
+    overflow: hidden;
+
+    #singleProductCoffeeIntroSection {
+        padding: 2.5rem 1.5rem 1rem;
+        border: 1px solid #cdd2d9;
+        border-top: 3px solid #eaecef;
+        border-radius: inherit;
+        font-family: arial;
+
+        &:before {
+            border-color: transparent transparent #eaecef;
+            border-style: solid;
+            border-width: 0 15px 15px;
+            content: "";
+            height: 0;
+            position: absolute;
+            right: 50%;
+            top: 0;
+            -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+            width: 0;
+            z-index: 5;
+        }
+
+        .rating {
+            span {
+                color: #ffcb2f;
+            }
+        }
+
+        h2 {
+            line-height: 1.35;
+            font-family: FF Mark, Arial, Helvetica, Verdana, sans-serif;
+            letter-spacing: -1.2px;
+            font-size: 30px;
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+        }
+
+        h6 {
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin-bottom: 15px;
+            text-transform: capitalize;
+        }
+
+        h5 {
+            font-weight: 600;
+        }
+
+        .single_variable_wrap,
+        .form-row {
+            label {
+                font-weight: 600;
+            }
+
+            .form-control {
+                font-size: 14px;
+                margin-bottom: 15px;
+            }
+        }
+
+        .customPriceTag,
+        .customAddToCartButtonWrapper {
+            margin-top: 15px !Important;
+
+            button.btn {
+                width: 100%;
+                height: 42px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 780px) {
+
+    .coffee-list {
+        margin: 0 -15px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .coffee_selection {
+        margin-bottom: 30px;
+    }
+
+    section.inner_content_banner {
+        img {
+            min-height: 50vh;
+            object-fit: cover;
+        }
+
+        .inner_content_banner_content {
+            bottom: 30px;
+        }
+    }
+
+    #product_section {
+        #singleProductCoffeeIntroSection {
+            h2 {
+                padding-top: 1rem;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .choose_coffee {
+        padding: 30px 0;
+
+        .coffee-list {
+            h2.title {
+                font-size: 2rem;
+            }
+
+            p.description {
+                font-size: 1rem;
+            }
+
+            .coffee_selection {
+                .wizard .nav-tabs li a {
+                    justify-content: center;
+                    padding-left: .5rem;
+                }
+
+                .coffee_selection_box {
+                    margin-top: 2rem;
+                    padding: 1rem 0;
+
+                    img {
+                        margin-bottom: 0;
+                    }
+
+                    h5 {
+                        margin: 1rem auto 1.5rem;
+                    }
+                }
+            }
+        }
+
+    }
+
+    .wizard {
+        //        width: 90%;
+
+        span.round-tab {
+            font-size: 16px;
+            width: 50px;
+            height: 50px;
+            line-height: 50px;
+        }
+    }
+
+    #product_section #singleProductCoffeeIntroSection {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}

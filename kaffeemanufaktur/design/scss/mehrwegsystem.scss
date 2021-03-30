@@ -1,0 +1,22 @@
+#eventsHeader {
+    margin-top: -116px;
+    height: 22.3959vw;
+    background-image: url(../images/EE4BC92Bk.jpg);
+    position: relative;
+    background-position: center left;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    #eventsHeaderBottom {
+        position: absolute;
+        top: auto;
+        bottom: -1px;
+        height: 12vw;
+        left: 0px;
+        right: auto;
+        width: 100%;
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        background-image: url(../images/curve-white.svg);
+    }
+}

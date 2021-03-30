@@ -1,0 +1,404 @@
+#agbanner {
+    position: relative;
+    background-position: center left;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 3vw;
+    margin-top: -116px;
+    height: 30vw;
+    background-image: url(../images/datenschutz.jpg);
+
+    #agbBannerBottomDeco {
+        position: absolute;
+        top: auto;
+        bottom: -1px;
+        height: 12vw;
+        left: 0px;
+        right: auto;
+        width: 100%;
+        background: url(../images/agbannerbottom.svg) no-repeat;
+        background-size: 100% 100%;
+    }
+}
+
+.checkout {
+    ul.nav-wizard {
+        color: #737E86;
+        background-color: #f9f9f9;
+        border: 1px solid #d4d4d4;
+        border-radius: 6px;
+        zoom: 1;
+        position: relative;
+        overflow: hidden;
+        margin: 0;
+        padding: 0;
+        margin-bottom: 2em;
+
+        li {
+            &:before {
+                position: absolute;
+                display: block;
+                border: 24px solid transparent;
+                border-left: 16px solid #d4d4d4;
+                border-right: 0;
+                top: -1px;
+                content: '';
+                right: -16px;
+            }
+
+            &:after {
+                position: absolute;
+                display: block;
+                border: 24px solid transparent;
+                border-left: 16px solid #f9f9f9;
+                border-right: 0;
+                top: -1px;
+                content: '';
+                right: -15px;
+            }
+
+            position: relative;
+            float: left;
+            height: 46px;
+            display: inline-block;
+            vertical-align: middle;
+            padding: 0 20px 0 30px;
+            margin: 0;
+            font-size: 16px;
+            line-height: 46px;
+
+            &.active {
+                color: #3a87ad;
+                background: #d9edf7;
+
+                &:after {
+                    border-left: 16px solid #d9edf7;
+                }
+
+                a {
+                    color: #3a87ad;
+                }
+            }
+        }
+    }
+
+    form.checkout_form {
+        h3 {
+            font-size: 32px;
+            font-weight: 500;
+            letter-spacing: 2px;
+            margin-bottom: 15px;
+        }
+
+        label {
+            font-weight: 700;
+            line-height: 2;
+            display: block;
+        }
+
+        .form-group {
+            .form-control {
+                color: #000000;
+                background-color: rgba(164, 151, 120, 0);
+                border-color: #d9d9d9;
+                border-radius: 5px;
+                box-shadow: inset 0 0 2px 2px rgba(0, 0, 0, 0.02);
+                font-family: arial;
+                padding: 10px;
+                margin-bottom: 9px;
+
+                &::placeholder {
+                    color: #d9d9d9;
+                }
+            }
+
+            .input-group {
+                .form-control {
+                    border-right: 0;
+                    border-top-right-radius: 0;
+                    border-bottom-right-radius: 0;
+                }
+
+                .input-group-append {
+                    .input-group-text {
+                        background: transparent;
+                        box-shadow: inset 0 0 2px 2px rgba(0, 0, 0, 0.02);
+
+                        button {
+                            border: none;
+                            padding: 0;
+                            background: transparent;
+                        }
+                    }
+                }
+            }
+
+            button.btn-white {
+                border-radius: 4px;
+                padding: 9px 20px;
+                font-size: 16px;
+                font-family: arial;
+            }
+        }
+
+        ul.payment_method {
+            list-style: none;
+            margin: 0;
+            padding: 0 0 1rem;
+            border-bottom: 1px solid #d3ced2;
+
+            li {
+                input {
+                    margin-right: 1rem;
+                }
+
+                label {
+                    display: inline;
+                }
+
+                img {
+                    max-width: 55px;
+                    padding-left: 5px;
+                    margin-left: 4px;
+                }
+            }
+
+            .payment_box {
+                position: relative;
+                width: 100%;
+                padding: 1em;
+                margin: 1em 0;
+                font-size: .92em;
+                border-radius: 2px;
+                line-height: 1.5;
+                background-color: #dfdcde;
+                color: #515151;
+
+                &:before {
+                    content: "";
+                    display: block;
+                    border: 1em solid #dfdcde;
+                    border-right-color: transparent;
+                    border-left-color: transparent;
+                    border-top-color: transparent;
+                    position: absolute;
+                    top: -.75em;
+                    left: 0;
+                    margin: -1em 0 0 2em;
+                }
+
+                .card_details {
+                    background: #fff;
+
+                    input {
+                        height: 30px;
+                        border: none;
+                        margin-right: 0;
+
+                        &::placeholder {
+                            color: #ddd;
+                            font-family: arial;
+                        }
+                    }
+
+                    .input-group-append {
+                        input {
+                            max-width: 69px;
+                        }
+                    }
+                }
+
+                .paymentMethodRow {
+                    background: #fff;
+                    padding: 0 15px;
+                    cursor: pointer;
+                    border: 1px solid #dfdfdf;
+
+                    &:hover {
+                        background: #f9f9f9;
+                    }
+
+                    &.selected {
+                        background: #f9f9f9;
+
+                        .methodDetails {
+                            display: block !important;
+                        }
+                    }
+
+                    .content-group {
+                        position: relative;
+                        display: -ms-flexbox;
+                        display: flex;
+                        -ms-flex-wrap: wrap;
+                        flex-wrap: wrap;
+                        -ms-flex-align: center;
+                        align-items: center;
+                        width: 100%;
+                        height: 64px;
+
+                        .img_sec {
+                            width: 125px;
+                            padding-right: 1.5rem;
+
+                            img {
+                                max-width: 100%;
+                                padding: 0;
+                                margin: 0;
+                            }
+                        }
+
+                        .methodName {
+                            position: relative;
+                            -ms-flex: 1 1 auto;
+                            flex: 1 1 auto;
+                            width: 1%;
+                            min-width: 0;
+                            margin-bottom: 0;
+
+                            p {
+                                margin: 0;
+                                font-weight: bold;
+                                font-family: arial;
+                                font-size: 12px;
+                            }
+                        }
+
+                        .methodDetails {
+                            width: 30px;
+                            font-size: 25px;
+                            display: none;
+
+                            i:before {
+                                content: "\f00c";
+                            }
+                        }
+                    }
+
+                    .methodDetails {
+                        font-size: 11px;
+                        font-family: Arial;
+                        margin-bottom: 12px;
+                        padding-left: 125px;
+                        padding-right: 45px;
+                        display: none;
+
+                        a {
+                            color: #0070ba;
+                        }
+                    }
+                }
+            }
+        }
+
+        .step-button {
+            padding-top: 1rem;
+            align-items: center;
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+
+    .shop_table {
+        border: 1px solid rgba(0, 0, 0, .1);
+        margin: 0 -1px 24px 0;
+        text-align: left;
+        width: 100%;
+        border-collapse: separate;
+        border-radius: 5px;
+        background: #eee;
+
+        th,
+        td {
+            padding: 10px;
+            text-align: center;
+            border-width: 0px;
+            border-style: solid;
+            vertical-align: middle;
+
+            ul {
+                list-style: none outside;
+                margin: 0;
+                padding: 0;
+                color: #737E86;
+            }
+        }
+
+        th {
+            border-width: 0 0px 0px 0;
+            font-weight: 700;
+            padding: 10px;
+            line-height: 1.5em;
+            box-shadow: inset 0px 4px 3px -2px rgba(0, 0, 0, .04);
+        }
+
+        tr {
+            &:first-child td {
+                box-shadow: inset 0px 4px 3px -2px rgba(0, 0, 0, .04);
+            }
+
+            margin: 0;
+            padding: 0;
+            border: 0;
+
+            th {
+                border-right: 0;
+            }
+
+            .product-name {
+                text-align: left;
+            }
+
+            .wc-gzd-product-name-left {
+                max-width: 15%;
+                margin-right: 1em;
+            }
+        }
+
+        .wc-gzd-product-name-left,
+        .wc-gzd-product-name-right {
+            float: left;
+        }
+
+        #Content img {
+            z-index: -1;
+            max-width: 100%;
+            height: auto;
+        }
+
+        thead {
+            th:not(:first-child) {
+                text-align: center;
+            }
+        }
+
+        tfoot {
+
+            th,
+            td {
+                font-weight: 700;
+                border-top: 1px solid rgba(0, 0, 0, .1);
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    #agbanner {
+        height: 50vh;
+        margin-top: -72px;
+    }
+
+    .checkout {
+        form.checkout_form {
+            h3 {
+                font-size: 1.5rem;
+                line-height: 1;
+
+                label {
+                    line-height: normal;
+                }
+            }
+        }
+    }
+}

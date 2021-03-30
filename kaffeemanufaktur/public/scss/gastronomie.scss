@@ -1,0 +1,574 @@
+#gastroHeader {
+    margin-top: -116px;
+    height: 40.2814vw;
+    position: relative;
+    margin-bottom: -11.0995vw;
+    z-index: 1;
+    background-image: url(../images/gastroHeader.png);
+    background-position: top left;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.hoverZoom {
+    transition: .3s all ease-in-out;
+
+    &:hover {
+        transform: scale(1.05);
+
+        h2,
+        h3,
+        h5,
+        h4,
+        h6,
+        p {
+            text-decoration: underline;
+            text-decoration-color: #a98a45;
+        }
+    }
+}
+
+#gastroParallaxSection {
+    position: relative;
+    padding-top: 11.0995vw;
+    background-image: url(../images/gastroParallaxSection.png);
+    background-position: top left;
+    background-repeat: no-repeat repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+    #gastroParallaxUpper {
+        position: relative;
+        padding-bottom: 2vw;
+
+        .gastroParallaxHeader {
+            text-align: center;
+            padding: 30px 0;
+
+            h2 {
+                margin-bottom: 22px;
+                line-height: 30px;
+                font-size: 30px;
+                color: #000;
+                font-weight: 300;
+            }
+
+            p {
+                color: #000;
+                margin-bottom: 15px;
+            }
+
+            .links {
+                display: flex;
+                -ms-display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: center;
+                text-align: center;
+
+                a {
+                    flex-basis: 30%;
+                    max-width: 50%;
+                    background-color: rgb(218, 159, 86);
+                    border-radius: 10px;
+                    padding: 25px;
+                    color: #fff;
+                    margin: 0px 12px;
+                    font-size: 22px;
+                    box-shadow: 5px 5px 3px 0px rgba(0, 0, 0, 0.35);
+
+                    &:hover {
+                        text-decoration: underline;
+                        text-decoration-color: #fff;
+                    }
+                }
+            }
+        }
+
+        #gastroParallaxBottomDeco {
+            position: absolute;
+            bottom: 0px;
+            left: 0px;
+            right: 0px;
+            height: 13.0729vw;
+            opacity: 0.65;
+            background: 100% 100%;
+            background-repeat: no-repeat;
+            background-image: url(../images/gastroParallaxBottomDeco.svg)
+        }
+    }
+
+    #gastroParallaxProducts {
+        padding: 30px 8%;
+        background-color: rgb(185, 169, 171);
+        box-shadow: 5px 7px 3px 0px rgba(0, 0, 0, 0.35);
+
+        h2 {
+            font-size: 30px;
+            color: #000;
+            font-family: "minion pro";
+            line-height: 1;
+            font-weight: 300;
+            letter-spacing: 0px;
+            margin: 25px 0 40px;
+            text-align: center;
+        }
+
+        .gastroProductBox {
+            display: flex;
+            justify-content: space-around;
+            text-align: center;
+            flex-wrap: wrap;
+
+            .gastroProduct {
+                flex: 0 0 17%;
+                max-width: 17%;
+
+                h3 {
+                    font-size: 17px;
+                    margin-bottom: 0px;
+                    font-family: "minion-pro";
+                    letter-spacing: 2px;
+                    font-weight: 500;
+                    margin: 6px 0;
+                    color: #000;
+                }
+
+                h2 {
+                    font-size: 32px;
+                    font-weight: 600;
+                    font-family: "minion-pro";
+                    line-height: 25px;
+                    margin: 0 0 15px;
+                }
+            }
+        }
+
+        a.btn-white {
+            padding: 0 200px;
+            line-height: 45px;
+            font-size: 22px;
+        }
+    }
+
+    #gastroParallaxModels {
+        position: relative;
+        padding: 40px 0 30px;
+
+        h2 {
+            font-weight: 300;
+            letter-spacing: 0px;
+            font-size: 30px;
+            line-height: 1;
+            font-family: "minion pro";
+            color: #000;
+            text-align: center;
+        }
+
+        .content {
+            max-width: 70%;
+            margin: auto;
+
+            h3 {
+                font-weight: 500;
+                letter-spacing: 0px;
+                font-size: 25px;
+                line-height: 25px;
+                font-family: "minion pro";
+            }
+
+            p {
+                margin-bottom: 15px;
+            }
+        }
+    }
+
+    #gastroParallaxFloating {
+        #gastroParallaxFloatingTop {
+            background: url(../images/gastroParallaxFloatingTop.svg) no-repeat;
+            background-size: 100% 100%;
+            min-height: 7vw;
+            max-width: calc(100% - 40px);
+            margin: auto;
+            display: flex;
+            align-items: center;
+
+            h2 {
+                flex: auto;
+                font-weight: 300;
+                letter-spacing: 0px;
+                font-size: 30px;
+                line-height: 1;
+                font-family: "minion pro";
+                color: #000;
+                text-align: center;
+            }
+        }
+
+        #gastroParallaxFloatingBottom {
+            background-color: white;
+            border-radius: 25px;
+            padding: 10px 0;
+            box-shadow: 5px 5px 3px 0px rgba(0, 0, 0, 0.35);
+
+            .gastroParallaxFloatingContent {
+                text-align: center;
+                padding: 0 10%;
+
+                h3 {
+                    font-size: 24px;
+                    font-weight: 600;
+                    letter-spacing: 0.5px;
+                    margin-bottom: 10px;
+                }
+            }
+        }
+    }
+
+    #gastroParallaxLower {
+        background-color: rgba(255, 255, 255, 0.65);
+        text-align: center;
+        padding-bottom: 30px;
+
+        h2 {
+            font-size: 32px;
+            line-height: 1;
+            font-family: "minion pro";
+            padding-top: 30px;
+            margin-bottom: 20px;
+            color: #000;
+        }
+
+        p {
+            text-align: left;
+
+            span {
+                display: block;
+            }
+        }
+    }
+}
+
+#newProductGenericSection {
+    position: relative;
+    min-height: 35.4469vw;
+    background-position: top left;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(../images/newProduct.png);
+
+    .container {
+        min-height: inherit;
+
+        div {
+            min-height: inherit;
+        }
+
+        .row {
+            justify-content: center;
+            align-items: center;
+
+            .text-center {
+                min-height: auto;
+
+                h3 {
+                    font-size: 24px;
+                    line-height: 1;
+                    font-weight: 600;
+                    margin: auto;
+                }
+
+                h2 {
+                    font-size: 56px;
+                    line-height: 1;
+                    color: #000;
+                    font-weight: 600;
+                }
+
+                a.btn-white {
+                    padding: 0 40px;
+                    line-height: 44px;
+                    margin-bottom: 15px;
+                }
+            }
+        }
+    }
+
+    #newProductGenericSectionFloaterOuter {
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        width: 15vw;
+        height: 8.9831vw;
+        background-image: url(../images/corner.png);
+        background-position: top left;
+        background-repeat: no-repeat;
+        background-size: cover;
+        overflow: hidden;
+
+        .inner {
+            transform: rotate(31deg);
+            text-align: right;
+            padding-top: 35px;
+            position: relative;
+            font-size: 18px;
+            margin-right: -.5vw;
+            font-weight: 600;
+            color: #fff;
+        }
+    }
+}
+
+#gastroSustainability {
+    position: relative;
+    padding-top: 5vw;
+    background-image: url(../images/gastroSustainability.png);
+    background-position: top left;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: white;
+    border-top: 12px solid #0c0c0c;
+
+    h2 {
+        font-weight: 300;
+        letter-spacing: 0px;
+        font-size: 47px;
+        margin-bottom: 2.5vw;
+        line-height: 1;
+        font-family: "minion pro";
+    }
+
+    .Sustainability {
+        padding: 20px;
+        background-color: rgb(229, 233, 237);
+        border-radius: 15px;
+        padding: 20px 20px 30px;
+        text-align: center;
+
+        h3 {
+            font-weight: 600;
+            margin-top: 20px;
+            margin-bottom: 0px;
+            font-family: "minion pro";
+            line-height: 1;
+            font-size: 26px;
+        }
+
+        h4 {
+            font-size: 14px;
+            line-height: 1;
+            font-weight: 600;
+            font-family: "minion pro";
+            margin-bottom: 15px;
+        }
+    }
+
+    .gastroSustainabilityContent {
+        background: rgba(255, 255, 255, 0.85);
+        border-radius: 15px;
+        padding: 30px 50px 10px;
+        margin-top: 75px;
+        position: relative;
+        margin-bottom: 15px;
+
+        h4 {
+            font-size: 32px;
+            line-height: 1;
+            margin-bottom: 5px;
+            font-family: "minion pro";
+            font-weight: 500;
+            letter-spacing: 0px;
+        }
+
+        p {
+            margin-bottom: 5px;
+        }
+
+        a {
+            color: #000;
+            text-decoration: underline;
+        }
+
+        .cup {
+            position: absolute;
+            right: 15px;
+            transform: translateX(85%);
+            top: -31px;
+
+            img {
+                max-width: 250px;
+            }
+        }
+    }
+}
+
+#contactUsGeneric {
+    position: relative;
+    border-bottom: 7px solid rgb(228, 207, 171);
+    margin-bottom: 40px;
+    background: linear-gradient(rgb(228, 207, 171), white);
+    padding-top: 100px;
+
+    h3 {
+        font-size: 25px;
+        line-height: 1;
+        font-weight: 600;
+        margin-bottom: 10px;
+        font-family: "minion pro";
+        color: #000;
+    }
+
+    h2 {
+        margin-bottom: 40px;
+        font-size: 30px;
+        line-height: 1;
+        font-weight: 300;
+        font-family: "minion pro";
+        color: #000;
+    }
+
+    a.btn-white {
+        padding: 0 42px;
+        line-height: 44px;
+        font-size: 16px;
+    }
+
+    span {
+        font-weight: 600;
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 1050px) {
+    #gastroParallaxSection {
+        #gastroParallaxProducts .gastroProductBox .gastroProduct h2 {
+            font-size: 24px;
+
+            #gastroParallaxFloating #gastroParallaxFloatingTop h2 {
+                margin: 35px 0;
+            }
+        }
+    }
+
+    #gastroSustainability .gastroSustainabilityContent .cup img {
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    #gastroParallaxSection {
+        #gastroParallaxProducts .gastroProductBox .gastroProduct {
+            flex: 0 0 30%;
+            max-width: 30%;
+            margin-bottom: 20px;
+        }
+
+        #gastroParallaxFloating {
+            #gastroParallaxFloatingTop {
+                background: #fff;
+                border-radius: 25px 25px 0 0;
+                max-width: 100%;
+                box-shadow: 5px 5px 3px 0px rgba(0, 0, 0, 0.35);
+            }
+
+            #gastroParallaxFloatingBottom {
+                padding: 10px 15px;
+                border-radius: 0 0 25px 25px;
+
+                .gastroParallaxFloatingContent {
+                    padding: 0;
+
+                    h3 {
+                        font-size: 18px;
+                    }
+                }
+            }
+        }
+    }
+
+    #gastroSustainability .gastroSustainabilityContent .cup {
+        position: static;
+        transform: translateX(0);
+        margin-top: 15px;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    #gastroHeader{
+    margin-top: -72px;
+        height: 50vh;
+        background-size: 100% 80%;
+    }
+
+    #newProductGenericSection {
+        background-size: contain;
+
+        .container .row .text-center {
+            h2 {
+                line-height: 35vw;
+            }
+
+            h3 {
+                display: none;
+            }
+        }
+
+        #newProductGenericSectionFloaterOuter {
+            width: 25vw;
+            height: 15vw;
+
+            .inner {
+                padding-top: 20px;
+                padding-left: 35px;
+                font-size: 15px;
+            }
+        }
+    }
+
+    #gastroSustainability {
+        .Sustainability {
+            margin-bottom: 20px;
+        }
+
+        .gastroSustainabilityContent {
+            margin-top: 20px;
+        }
+    }
+
+    #contactUsGeneric {
+        img {
+            display: none;
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #gastroParallaxSection {
+        #gastroParallaxUpper .gastroParallaxHeader .links a {
+            flex: 0 0 100%;
+            max-width: 100%;
+            margin-bottom: 20px;
+        }
+
+        #gastroParallaxProducts {
+            padding: 20px 0;
+            .gastroProductBox .gastroProduct {
+                flex: 0 0 100%;
+                max-width: 100%;
+            }
+
+            a.btn-white {
+                width: 100%;
+                padding: 0 15px;
+            }
+        }
+        #gastroParallaxFloating #gastroParallaxFloatingTop h2{
+            margin: 20px 0;
+        }
+    }
+
+    #newProductGenericSection #newProductGenericSectionFloaterOuter .inner {
+        padding: 6px 19px 0;
+    }
+}

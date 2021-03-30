@@ -1,0 +1,494 @@
+#tippsPage {
+    background-color: rgb(232, 226, 218);
+    padding-top: calc(5vw + 130px);
+    margin-top: -116px;
+
+    #tippsFancySection {
+        position: relative;
+        width: 100%;
+
+        #fancyBackgroundFirstFloor {
+            position: relative;
+            height: calc(53.7449vw - 2px);
+        }
+
+        .fancyBackground {
+            position: absolute;
+            background-position: top left;
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+
+        #fancyBackgroundFirstFloor {
+            position: relative;
+            height: calc(53.7449vw - 2px);
+        }
+
+        #fancyBackgroundShelves {
+            background-image: url('../images/fancyBackgroundShelves.png');
+            top: 0px;
+            left: 0px;
+            width: 100%;
+            height: 22.7083vw;
+        }
+
+        #fancyBackgroundCoffeeMachine {
+            background-image: url('../images/fancyBackgroundCoffeeMachine.png');
+            width: 18vw;
+            height: 19vw;
+            top: 14.7vw;
+            right: 15vw;
+        }
+
+        #fancyBackgroundDarkBar {
+            background-image: url('../images/fancyBackgroundDarkBar.png');
+            top: 33.5vw;
+            right: 0px;
+            width: 69vw;
+            height: 19.4097vw;
+        }
+
+        #fancyBackgroundLightBar {
+            background-image: url('../images/fancyBackgroundLightBar.png');
+            top: 15.9vw;
+            left: 0px;
+            width: 100%;
+            height: 37.8449vw;
+        }
+
+        #firstFloorContentText {
+            background-image: url('../images/firstFloorContentText.png');
+            top: 20.5vw;
+            left: 15.5vw;
+            width: 20.5vw;
+            height: 7.5150vw;
+            box-sizing: border-box;
+            padding: 0.5vw 0.5vw 0.5vw 4.5vw;
+            font-family: 'Ink Free Regular';
+            color: black;
+            font-size: 15px;
+            ;
+            line-height: normal;
+
+            span:first-child {
+                font-size: 40px;
+                line-height: 16px;
+            }
+        }
+
+        #firstFloorContentSearch {
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            width: 100%;
+            height: 6.5vw;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+
+            input {
+                margin: 0px;
+                border-radius: 15px;
+                background-color: rgb(142, 113, 88);
+                border: none;
+                text-align: center;
+                margin-right: 1.5vw;
+                color: black;
+                box-shadow: inset 0 0 2px 2px rgba(0, 0, 0, 0.02);
+                padding: 10px;
+                width: 230px;
+                font-size: 15px;
+                display: block;
+                font-family: "arial";
+
+                &::placeholder {
+                    color: #000;
+                }
+            }
+
+            span {
+                cursor: pointer;
+                font-family: "minion-pro";
+                font-size: 22px;
+                line-height: 22px;
+                font-weight: 600;
+            }
+        }
+
+        #fancyBackgroundLowerFloors {
+            position: relative;
+            min-height: 460px;
+
+            #fancyBackgroundSecondFloorBackground {
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 100%;
+                width: 100%;
+                background-image: url(../images/fancyBackgroundSecondFloorBackground.png);
+                background-size: 100% 100%;
+            }
+
+            #fancyBackgroundPlant1 {
+                background-image: url(../images/fancyBackgroundPlant1.png);
+                right: 1vw;
+                top: 20.3vw;
+                width: 5.5014vw;
+                height: 12vw;
+            }
+
+            #fancyBackgroundPlant2 {
+                background-image: url(../images/fancyBackgroundPlant2.png);
+                top: 17vw;
+                left: -2vw;
+                width: 9vw;
+                height: 15.336vw;
+            }
+
+            #fancyBackgroundLamp {
+                background-image: url(../images/fancyBackgroundLamp.png);
+                top: 0px;
+                left: 3vw;
+                width: 4.1096vw;
+                height: 12vw;
+            }
+
+            #fancyBackgroundUpperStairs {
+                background-image: url(../images/fancyBackgroundUpperStairs.png);
+                top: -14vw;
+                right: 2.5vw;
+                height: 47vw;
+                width: 29.5443vw;
+            }
+
+            #threeFrames {
+                margin-top: 40px;
+
+                a.d-block {
+                    border: 2px solid black;
+                    box-shadow: 5px 5px 3px 0px rgba(0, 0, 0, 0.35);
+                    padding: 5px;
+                    background: rgb(54, 35, 8);
+                    height: 198px;
+                    position: relative;
+
+                    &:hover {
+                        .img_back {
+                            filter: blur(3px);
+                            -webkit-filter: blur(3px);
+                        }
+
+                        .img_content {
+                            opacity: 1;
+                            background: rgba(255, 255, 255, 0.5);
+                        }
+                    }
+
+                    .img_back {
+                        box-shadow: inset 0 0 10px #000000;
+                        background-position: center;
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                        height: 100%;
+                    }
+
+                    .img_content {
+                        position: absolute;
+                        width: calc(100% - 10px);
+                        height: calc(100% - 10px);
+                        top: 0;
+                        left: 0;
+                        bottom: 0;
+                        right: 0;
+                        margin: 5px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        letter-spacing: 1.5px;
+                        font-size: 20px;
+                        line-height: 1;
+                        font-weight: 550;
+                        color: #000;
+                        transition: .3s all ease-in-out;
+                        opacity: 0;
+
+                        span {
+                            display: block;
+                            word-break: break-word;
+                            text-align: center;
+                            flex: 0 0 100%;
+                        }
+
+                        p {
+                            position: absolute;
+                            display: inline-block;
+                            bottom: 10px;
+                            left: 10px;
+                        }
+                    }
+                }
+            }
+
+            #secondFloorHeadlines {
+                background: rgba(0, 0, 0, 0.1);
+                position: relative;
+                padding: 20px 0;
+
+                h3 {
+                    text-align: center;
+                    margin: 0px;
+                    font-family: "minion-pro";
+                    font-size: 14px;
+                    line-height: normal;
+                    letter-spacing: 0.5px;
+                    color: #f2f2f2;
+                }
+
+                h2 {
+                    margin: 0px;
+                    font-family: "minion-pro";
+                    font-size: 23px;
+                    line-height: normal;
+                    color: #f2f2f2;
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+
+    #tippsPostsCategoryControls {
+        padding: 70px 0 14px;
+
+        .click_button_box {
+            display: flex;
+            -ms-display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+
+            .click_button {
+                osition: relative;
+                flex: 0 0 23%;
+                background-color: rgb(204, 163, 94);
+                padding: 30px 10px;
+                text-align: center;
+                border-radius: 20px;
+                box-shadow: 5px 5px 3px 0px rgba(0, 0, 0, 0.35);
+                overflow: hidden;
+                cursor: pointer;
+                position: relative;
+                font-family: "minion-pro";
+                font-weight: 600;
+                font-size: 28px;
+                color: black;
+
+                .remove {
+                    position: absolute;
+                    top: 0px;
+                    bottom: 0px;
+                    left: 0px;
+                    right: 0px;
+                    background-size: 100% 100%;
+                    background-repeat: no-repeat;
+                    background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTUuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+PCFET0NUWVBFIHN2ZyBQVUJMSUMgIi0vL1czQy8vRFREIFNWRyAxLjEvL0VOIiAiaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkIj48c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJub25lIiB2aWV3Qm94PSIwIDAgMTAwIDQwIj48bGluZSB4MT0iMCIgeTE9IjAiIHgyPSIxMDAiIHkyPSI0MCIgc3R5bGU9InN0cm9rZTpyZ2IoMTQyLDExMyw4OCk7c3Ryb2tlLXdpZHRoOjMiIC8+PGxpbmUgeDE9IjAiIHkxPSI0MCIgeDI9IjEwMCIgeTI9IjAiIHN0eWxlPSJzdHJva2U6cmdiKDE0MiwxMTMsODgpO3N0cm9rZS13aWR0aDozIiAvPjwvc3ZnPg==);
+                    display: none;
+                }
+            }
+        }
+    }
+
+    #tippsPostsOrderControls {
+        position: relative;
+        margin: 40px 0 15px;
+
+        .border-bottom {
+            border-bottom: 5px solid rgb(142, 113, 88) !important;
+            padding: 4px;
+        }
+
+        button {
+            border: none;
+            outline: none;
+            background: transparent;
+            font-weight: 900;
+            font-size: 16px;
+        }
+
+        select {
+            min-width: 230px;
+            max-width: 100%;
+            padding: 3px 5px;
+            border-color: rgb(142, 113, 88);
+            color: black;
+            border-radius: 5px;
+            background: transparent;
+        }
+
+        #tippsPostResults {
+            a.d-block {
+                box-shadow: 5px 5px 3px 0px rgba(0, 0, 0, 0.35);
+                background: rgb(54, 35, 8);
+                height: 368px;
+                border-radius: 14px;
+                overflow: hidden;
+                margin: 22px 0;
+                position: relative;
+
+                &:hover {
+                    .img_back {
+                        filter: blur(3px);
+                        -webkit-filter: blur(3px);
+                    }
+
+                    .img_content {
+                        opacity: 1;
+                        background: rgba(255, 255, 255, 0.5);
+                    }
+                }
+
+                .img_back {
+                    box-shadow: inset 0 0 10px #000000;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    height: 100%;
+                    transition: .3s all ease-in-out;
+                }
+
+                .img_content {
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    top: 0;
+                    left: 0;
+                    bottom: 0;
+                    right: 0;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    letter-spacing: 1.5px;
+                    font-size: 20px;
+                    line-height: 1;
+                    font-weight: 550;
+                    color: #000;
+                    transition: .3s all ease-in-out;
+                    opacity: 0;
+
+                    span {
+                        display: block;
+                        word-break: break-word;
+                        text-align: center;
+                        flex: 0 0 100%;
+                    }
+
+                    p {
+                        position: absolute;
+                        display: inline-block;
+                        bottom: 10px;
+                        left: 10px;
+                    }
+                }
+            }
+        }
+    }
+
+    #tippsFadeOut {
+        width: 100%;
+        height: 30vw;
+        background: linear-gradient(rgb(232, 226, 218), white 80%);
+        margin-bottom: -3px;
+    }
+}
+
+
+@media screen and (max-width: 1050px) {
+
+    #tippsPage #tippsFancySection #fancyBackgroundLowerFloors #threeFrames a.d-block,
+    #tippsPage #tippsPostsOrderControls #tippsPostResults a.d-block {
+        .img_back {
+            filter: blur(3px);
+            -webkit-filter: blur(3px);
+        }
+
+        .img_content {
+            background: rgba(255, 255, 255, 0.5);
+            opacity: 1;
+
+            span {
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 991px) {
+    #tippsPage {
+        #tippsFancySection #fancyBackgroundLowerFloors {
+            #fancyBackgroundSecondFloorBackground {
+                position: static;
+                height: 255px;
+            }
+
+            #secondFloorHeadlines {
+                position: absolute;
+                top: 0;
+                width: 100%;
+            }
+        }
+
+        #tippsFancySection {
+            #fancyBackgroundLowerFloors #threeFrames a.d-block {
+                min-height: 291px;
+                margin-bottom: 20px;
+            }
+
+            #firstFloorContentText p {
+                line-height: 1;
+
+                span:last-child {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 767px) {
+    #tippsPage {
+        margin-top: -72px;
+
+        #tippsFancySection {
+            #firstFloorContentSearch {
+                top: -35px;
+            }
+
+            #firstFloorContentText p {
+                line-height: .9;
+                font-size: 12px;
+
+                span:first-child {
+                    font-size: 24px;
+                    line-height: inherit;
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 480px) {
+    #tippsPage {
+        #tippsFancySection {
+            #firstFloorContentText p {
+                font-size: 7px;
+
+                span:first-child {
+                    font-size: 14px;
+                }
+            }
+        }#tippsFancySection #fancyBackgroundLowerFloors #fancyBackgroundSecondFloorBackground{
+            height: 120px;
+        }
+    }
+}
